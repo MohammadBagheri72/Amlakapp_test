@@ -1,0 +1,135 @@
+﻿<Window Background="AliceBlue"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:Custom="http://schemas.microsoft.com/winfx/2006/xaml/presentation/ribbon" xmlns:PersianDateControls="clr-namespace:Arash.PersianDateControls;assembly=PersianDateControls" x:Class="M.B_MoshaverAmlak.MainWindow"
+        Title="املاک اذربایجان" Height="600" Width="950" WindowStartupLocation="CenterScreen" Icon="img/15.png" Loaded="Window_Loaded" Closing="Window_Closing"  >
+    <Grid >
+
+        <Custom:Ribbon HorizontalAlignment="Left" FlowDirection="RightToLeft" Cursor="Hand" VerticalAlignment="Top" Width="941">
+
+            <Custom:Ribbon.QuickAccessToolBar>
+
+                <Custom:RibbonQuickAccessToolBar>
+                    <Custom:RibbonButton x:Name="back" SmallImageSource="img/redo.png"/>
+                    <Custom:RibbonButton x:Name="front" SmallImageSource="img/undo.png"/>
+                    <Custom:RibbonButton x:Name="save" SmallImageSource="img/save.png"/>
+
+
+                </Custom:RibbonQuickAccessToolBar>
+
+
+
+            </Custom:Ribbon.QuickAccessToolBar>
+            <Custom:Ribbon.ApplicationMenu>
+                <Custom:RibbonApplicationMenu SmallImageSource="img/new.png">
+                    <Custom:RibbonApplicationSplitMenuItem Header="اطلاعات کاربری" Click="btnetelaatekarbordi" ImageSource="img/info.png" x:Name="menoitem1"/>
+                    <Custom:RibbonApplicationSplitMenuItem Header="بروز رسانی" ImageSource="img/update.png" x:Name="menoitem2"/>
+                    <Custom:RibbonApplicationSplitMenuItem Header="تغییر کلمه عبور" ImageSource="img/key.png" x:Name="menoitem3"/>
+                    <Custom:RibbonApplicationSplitMenuItem Header="پشتیبان گیری اطلاعات" Click="btnbackup" ImageSource="img/backup.png" x:Name="menoitem4"/>
+                    <Custom:RibbonApplicationSplitMenuItem Header="باز یابی فایل پشتیبان" Click="btnrestor" ImageSource="img/restore.png" x:Name="menoitem5"/>
+                    <Custom:RibbonApplicationSplitMenuItem Header="پشتیبانی و مرکز پیام" ImageSource="img/support.png" x:Name="menoitem6"/>
+                    <Custom:RibbonApplicationSplitMenuItem Header="تنظیمات" ImageSource="img/settings.png" x:Name="menoitem7"/>
+                    <Custom:RibbonApplicationSplitMenuItem Header="راهنما" ImageSource="img/help.png" x:Name="menoitem8"/>
+                    <Custom:RibbonApplicationSplitMenuItem Header="درباره ی ما" ImageSource="img/about.png" x:Name="menoitem9"/>
+                    <Custom:RibbonApplicationSplitMenuItem Header="خروج" ImageSource="img/exit.png" x:Name="menoitem10"/>
+
+                </Custom:RibbonApplicationMenu>
+            </Custom:Ribbon.ApplicationMenu>
+            <Custom:RibbonTab Header="اطلاعات مشتریان" >
+                <Custom:RibbonGroup>
+
+                    <Custom:RibbonButton Label="مالکین" LargeImageSource="img/13.png" Click="btnmalekin"/>
+
+                </Custom:RibbonGroup>
+
+                <Custom:RibbonGroup>
+                    <Custom:RibbonButton Label="خریداران" LargeImageSource="img/user_group.png" Click="btnkharidar"/>
+                </Custom:RibbonGroup>
+                <Custom:RibbonGroup>
+                    <Custom:RibbonButton Label="مستاجرین" LargeImageSource="img/4.ico" Click="btnmostajer"/>
+                </Custom:RibbonGroup>
+
+            </Custom:RibbonTab>
+            <Custom:RibbonTab Header="اطلاعات املاک">
+
+                <Custom:RibbonGroup>
+                    <Custom:RibbonButton Label="خانه" LargeImageSource="img/roadside_shop.png" Click="btnkhane" />
+                </Custom:RibbonGroup>
+                <Custom:RibbonGroup>
+                    <Custom:RibbonButton Label="اپارتمان" LargeImageSource="img/15.png" Click="btnapartman"/>
+                </Custom:RibbonGroup>
+                <Custom:RibbonGroup>
+                    <Custom:RibbonButton Label="مغازه" LargeImageSource="img/save.png" Click="btnmaghaze" />
+                </Custom:RibbonGroup>
+                <Custom:RibbonGroup>
+                    <Custom:RibbonButton Label="زمین" LargeImageSource="img/new.png" Click="btnzamin" />
+                </Custom:RibbonGroup>
+
+
+
+            </Custom:RibbonTab>
+            <Custom:RibbonTab Header="قرارداد های اجاره">
+
+                <Custom:RibbonGroup>
+                    <Custom:RibbonButton Label="خانه" LargeImageSource="img/roadside_shop.png" Click="btnEkhane" />
+                </Custom:RibbonGroup>
+                <Custom:RibbonGroup>
+                    <Custom:RibbonButton Label="اپارتمان" LargeImageSource="img/15.png" Click="btnEapartman"/>
+                </Custom:RibbonGroup>
+                <Custom:RibbonGroup>
+                    <Custom:RibbonButton Label="مغازه" LargeImageSource="img/save.png" Click="btnEmaghaze"/>
+                </Custom:RibbonGroup>
+
+
+            </Custom:RibbonTab>
+            <Custom:RibbonTab Header="قرارداد های خرید" >
+                <Custom:RibbonGroup>
+                    <Custom:RibbonButton Label="خانه" LargeImageSource="img/roadside_shop.png" Click="btnKHkhane"/>
+                </Custom:RibbonGroup>
+                <Custom:RibbonGroup>
+                    <Custom:RibbonButton Label="اپارتمان" LargeImageSource="img/15.png" Click="btnKHapartman" />
+                </Custom:RibbonGroup>
+                <Custom:RibbonGroup>
+                    <Custom:RibbonButton Label="مغازه" LargeImageSource="img/save.png" Click="btnKHmaghaze"/>
+                </Custom:RibbonGroup>
+                <Custom:RibbonGroup>
+                    <Custom:RibbonButton Label="زمین" LargeImageSource="img/new.png" Click="btnKhHzamin"/>
+                </Custom:RibbonGroup>
+
+
+
+            </Custom:RibbonTab>
+
+
+        </Custom:Ribbon>
+
+
+        <PersianDateControls:PersianCalendar HorizontalAlignment="Left" Margin="0,138,0,0" Name="persiancalender" VerticalAlignment="Top" Height="248" Width="244"/>
+        <DockPanel HorizontalAlignment="Left" Height="48" LastChildFill="False" Margin="0,521,0,0" VerticalAlignment="Top" Width="942">
+            <DockPanel.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFE0EAF5" Offset="0.023"/>
+                    <GradientStop Color="#FF9090EC" Offset="0.99"/>
+                    <GradientStop Color="#FFBBBBF9" Offset="0.782"/>
+                    <GradientStop Color="#FF9393EC" Offset="0.872"/>
+                    <GradientStop Color="#FEDFE9F5" Offset="0.225"/>
+                </LinearGradientBrush>
+            </DockPanel.Background>
+            <Label Content=" admin:کاربر وارد شده " Height="48" Width="236" VerticalAlignment="Top" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Tahoma" FontSize="14"/>
+            <Label Content="نگارش 1.0000" Height="48" Width="236" VerticalAlignment="Top" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Tahoma" FontSize="14"/>
+            <Label Content="پروژه ی کلاسی" Height="48" Width="236" VerticalAlignment="Top" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Tahoma" FontSize="14"/>
+            <Label Content="نرم افزار مشاور املاک" Height="48" Width="236" VerticalAlignment="Top" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Tahoma" FontSize="14"/>
+
+        </DockPanel>
+        <Image HorizontalAlignment="Left" Height="373" Margin="249,148,0,0" VerticalAlignment="Top" Width="693" Stretch="Fill" Source="img/99.png"/>
+        <Label Content="چهار شنبه" Name="lblruzhafte" HorizontalAlignment="Left" Margin="177,391,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.407,-0.061" FontFamily="Tahoma" FontSize="14"/>
+        <Label Content="2" HorizontalAlignment="Left" Name="lblruzmah" Margin="139,391,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.407,-0.061" FontFamily="Tahoma" FontSize="14"/>
+        <Label Content="ابان" HorizontalAlignment="Left" Name="lblmah" Margin="78,391,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.407,-0.061" FontFamily="Tahoma" FontSize="14"/>
+        <Label Content="1386" HorizontalAlignment="Left" Name="lblsal" Margin="10,391,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.407,-0.061" FontFamily="Tahoma" FontSize="14"/>
+        <Label Content="22" HorizontalAlignment="Left" Name="lblmin" Margin="125,423,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.407,-0.061" FontFamily="Tahoma" FontSize="20"/>
+        <Label Content=":" HorizontalAlignment="Left" Name="lblseck" Margin="92,423,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.407,-0.061" FontFamily="Tahoma" FontSize="20"/>
+        <Label Content="17" HorizontalAlignment="Left" Name="lblhour" Margin="52,423,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.407,-0.061" FontFamily="Tahoma" FontSize="20"/>
+
+
+    </Grid>
+</Window>
